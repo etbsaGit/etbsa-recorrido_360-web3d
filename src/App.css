@@ -1,0 +1,89 @@
+.dialog-box,
+.dialog-box-left {
+	position: relative;
+	width: 276px;
+	height: 136px;
+	border-radius: 24px;
+	padding: 10px;
+	background-color: white;
+	padding: 12px 24px;
+
+	margin: 20px;
+	color: black;
+}
+
+.dialog-text {
+	font-size: 16px;
+}
+
+/* Flecha triangular en la nube de diálogo */
+.dialog-box:after {
+	content: "";
+	position: absolute;
+	top: 40%;
+	left: -3%;
+	margin-left: -10px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: transparent white transparent transparent;
+}
+
+.dialog-box-left::after {
+	right: -6%;
+	transform: rotate(180deg);
+	content: "";
+	position: absolute;
+	/* top: 80%; */
+	margin-left: -10px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: transparent white transparent transparent;
+}
+.dialog-top::after {
+	top: 75%;
+}
+
+.dialog-selector {
+	right: -10%	;
+}
+
+.card-shadow {
+	border-radius: 12px;
+	background: #fff;
+	box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.blur-info {
+	backdrop-filter: blur(2px);
+}
+
+info-hover:hover {
+	filter: grayscale(100%); /* Convierte la imagen a escala de grises */
+	filter: brightness(1.2); /* Ajusta el brillo para obtener el tono deseado */
+	background-color: red !important;
+}
+
+info-hover {
+	background-color: blue !important;
+	margin-bottom: 1000px;
+}
+
+#ficha:hover {
+	filter: saturate(200%);
+}
+
+.fadeinout {
+	animation: fadeInOut 1.5s infinite; /* 2s es la duración de la animación, y "infinite" la hace repetirse indefinidamente */
+}
+
+@keyframes fadeInOut {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	80% {
+		opacity: 1;
+	}
+}

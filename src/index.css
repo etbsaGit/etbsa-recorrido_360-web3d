@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.monserrat {
+	font-family: "Montserrat", sans-serif;
+}
+
+.raleway {
+	font-family: "Raleway", sans-serif;
+}
+
+* {
+	user-select: none;
+}
+
+*::-webkit-scrollbar {
+	width: 8px; /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 10px; /* roundness of the scroll thumb */
+	border: 0px solid white; /* creates padding around scroll thumb */
+}
